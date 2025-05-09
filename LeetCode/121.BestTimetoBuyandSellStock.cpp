@@ -2,17 +2,16 @@
 using namespace std;
 
 int maxProfit(vector<int>& prices) {
-    int buying_price = prices[0];
-    int max_profit = 0;
+    int buy = prices[0];
+    int profit = 0;
     for(int i=0; i<prices.size(); i++) {
-        if(buying_price  > prices[i]) {
-            buying_price  = prices[i];
-        } else {
-            int profit = prices[i] - buying_price ;
-            max_profit = max(profit, max_profit);
+        if(prices[i] < buy) {
+            buy = prices[i];
+        } else if(profit < prices[i] - buy){
+            profit = prices[i] - buy;
         }
     }
-    return max_profit;
+    return profit;
 }
 
 int main() {

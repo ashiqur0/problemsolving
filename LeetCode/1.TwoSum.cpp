@@ -4,7 +4,7 @@ using namespace std;
 vector<int> twosum(vector<int> &nums, int target) {
     unordered_map<int, int> hashTable;
     for(int i=0; i<nums.size(); i++) {
-        int key = target - nums[i];
+        int key = target - nums[i]; //variable increase complexity
         if(hashTable.count(key)) {
             return {hashTable[key], i};
         }
