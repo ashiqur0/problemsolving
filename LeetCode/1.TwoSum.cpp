@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//Intemediate skills: Hash Table
+//Fundamental skills: Array
 vector<int> twoSum(vector<int>& nums, int target) {
     unordered_map<int, int> hashTable;
     for(int i=0; i<nums.size(); i++) {

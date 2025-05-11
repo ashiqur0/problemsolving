@@ -1,46 +1,37 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool containsDuplicate(vector<int>& nums) {
-    // Time limit exceed
-
-    // for(int i=0; i<nums.size(); i++) {
-    //     for(int j=i+1; j<nums.size(); j++) {
-    //         if(nums[i] == nums[j]) {
-    //             return true;
-    //         }
-    //     }
-    // }
-    // return false;
-
-    // 7%(beats) :accepted but optimization need
-    // set<int> se;
-    // for(int i=0; i<nums.size(); i++) {
-    //     se.insert(nums[i]);
-    //     if(se.size() != i+1) {
-    //         return true;
-    //     }
-    // }
-    // return false;
-
-    // 33%
+//Intemediate skills: Hash Table
+//Fundamental skills: Array, Sorting
+bool containsDuplicate(vector<int>& nums) {    
+    //51ms
     unordered_set<int> s;
-    for(int n : nums) {
-        if(s.find(n) != s.end()) {
+    for(int i=0; i<nums.size(); i++) {
+        // insert the number if it is not exist to the set
+        if(!s.count(nums[i])) {
+            s.insert(nums[i]);
+        } else {
+            // otherwise return true
             return true;
         }
-        s.insert(n);
     }
+    // finaly return false if there is no duplicate
     return false;
 
-    // 25%
+    // //55ms
     // unordered_set<int> s;
     // for(int i=0; i<nums.size(); i++) {
-    //     if(s.count(nums[i])) {
+    //     // s.find() returns s.end() if the value does not exist in s
+    //     // s.find() returns an iteratoar pointing to the nums[i] if the value is exist
+    //     // ex: if nums[i] = 1 then find() will return s.end() 
+    //     // if find function find the number in the unordererd_set s then it will return an iterator which will not equal to s.end(). So, the condition will be satisfy and it will return true
+    //     if(s.find(nums[i]) != s.end()) {
     //         return true;
     //     }
+    //     // otherwise it will insert the number to the unordered_set s
     //     s.insert(nums[i]);
-    // }
+    // } 
+    // // finally, return false if there is no duplicates
     // return false;
 }
 

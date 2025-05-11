@@ -1,13 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//Advanced skills: Dynamic Programming
+//Fundamental skills: Array
 int maxProfit(vector<int>& prices) {
+    // initialize buy price = first value and profit = 0
     int buy = prices[0];
     int profit = 0;
     for(int i=0; i<prices.size(); i++) {
+        // update the price if it is less than previouslybuy price
         if(prices[i] < buy) {
             buy = prices[i];
         } else if(profit < prices[i] - buy){
+            // update the profit if it is lower thancurrent profit
             profit = prices[i] - buy;
         }
     }
