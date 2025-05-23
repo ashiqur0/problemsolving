@@ -3,20 +3,20 @@ using namespace std;
 
 //Intemediate skills: Hash Table
 //Fundamental skills: Array
-vector<int> twoSum(vector<int>& nums, int target) {
+vector<int> twoSum(vector<int>& nums, int target) {    
     unordered_map<int, int> hashTable;
-    for(int i=0; i<nums.size(); i++) {
-        // find the vlaue whice one need to search 
-        int key = target - nums[i];
-        // if the key found in hashTable
-        if(hashTable.count(key)) {
-            // return the value of that key and index ofanother vlaue
-            return {hashTable[key], i};
+        for(int i=0; i<nums.size(); i++) {
+            // find the vlaue whice one need to search 
+            int key = target - nums[i];
+            // if the key found in hashTable
+            if(hashTable.count(key)) {
+                // return the value of that key and index ofanother vlaue
+                return {hashTable[key], i};
+            }
+            // insert key-value(number and it's index) pairto the hashTable
+            hashTable[nums[i]] = i;
         }
-        // insert key-value(number and it's index) pairto the hashTable
-        hashTable[nums[i]] = i;
-    }
-    // return an empty array if the value not fuound
+        // return an empty array if the value not fuound
     return{};
 }
 
