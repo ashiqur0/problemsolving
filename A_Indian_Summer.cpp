@@ -1,3 +1,6 @@
+// CodeForces Problem: Distink pair count করতে হবে।
+// Learning: pair, set
+
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
