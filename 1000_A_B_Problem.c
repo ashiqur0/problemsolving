@@ -1,3 +1,6 @@
+// Problem: Timus 1000
+// Learning: Input and sum
+
 #include <stdio.h>
 int main() {
 
