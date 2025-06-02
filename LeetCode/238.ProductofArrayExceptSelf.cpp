@@ -1,3 +1,7 @@
+// LeetCode: 238. Product of Array Except Self
+// Learning: Prefix Sum Approach
+// Description: Given an integer array nums. Have to return the answer array which it the product of all element but except that element.
+
 #include <bits/stdc++.h>
 using namespace std;
 
