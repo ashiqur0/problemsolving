@@ -1,3 +1,7 @@
+// LeetCode: 153. Find Minimum in Rotated Sorted Array
+// Learning: Binary Search
+// Description: Given array of integer. Find the minimum
+
 #include <bits/stdc++.h>
 using namespace std;
 
