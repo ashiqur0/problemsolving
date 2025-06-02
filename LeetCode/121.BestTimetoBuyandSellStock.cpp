@@ -4,9 +4,6 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
-//Advanced skills: Dynamic Programming
-//Fundamental skills: Array
 int maxProfit(vector<int>& prices) {
     // initialize buy price = first value and profit = 0
     int buy = prices[0];
