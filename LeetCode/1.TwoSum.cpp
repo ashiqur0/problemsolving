@@ -1,8 +1,9 @@
-#include <bits/stdc++.h>
-using namespace std;
 // LeetCode: 1. Two Sum
 // Learning: Hash Table
-// Description: Given an array and a target. Have to reutrn two indices, whose sum is equal to the target value
+// Description: Given an array and a target. Have to reutrn two indices, whose sum = target
+
+#include <bits/stdc++.h>
+using namespace std;
 vector<int> twoSum(vector<int>& nums, int target) {    
     unordered_map<int, int> hashTable;
         for(int i=0; i<nums.size(); i++) {
