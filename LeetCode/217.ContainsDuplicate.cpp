@@ -1,8 +1,9 @@
+// LeetCode: 217. Contains Duplicate
+// Learning: Hash Table, Set
+// Description: Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
 #include <bits/stdc++.h>
 using namespace std;
-
-//Intemediate skills: Hash Table
-//Fundamental skills: Array, Sorting
 bool containsDuplicate(vector<int>& nums) {    
     //51ms
     unordered_set<int> s;
