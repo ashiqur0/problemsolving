@@ -4,21 +4,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 int maxArea(vector<int>& height) {
-    int max_area = 0;
-    for(int i=0; i<height.size(); i++) {
-        int j = height.size()-1;
-        while(i<j){
-            int a = (j-i) * min(height[i], height[j]);
-            max_area = max(max_area, a);
+    int max_area = 0, i = 0, j = height.size()-1;
+    while(i<j){
+        int a = (j-i) * min(height[i], height[j]);
+        max_area = max(max_area, a);
+        if(height[i] < height[j]) {
+            i++;
+        } else {
             j--;
         }
     }
     return max_area;
 }
+
 int main() {
 
-    // vector<int> v = {1,8,6,2,5,4,8,3,7};//49
-    vector<int> v = {1,1};//1
+    vector<int> v = {1,8,6,2,5,4,8,3,7};//49
+    // vector<int> v = {1,1};//1
     cout << maxArea(v) << endl;
 
   return 0;
