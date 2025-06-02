@@ -1,7 +1,10 @@
+// LeetCode: 33. Search in Rotated Sorted Array
+// Learning: Modified Binary Search
+// Description: Given rotated sorted array. Have to find the target value and return its index. but within O(log n) time
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// Modified Binary Search
 int binarySearch(vector<int>& nums, int target) {
     int start = 0, end = nums.size() - 1;
     while(start <= end) {
