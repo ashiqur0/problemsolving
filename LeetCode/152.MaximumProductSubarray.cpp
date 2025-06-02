@@ -1,3 +1,7 @@
+// LeetCode: 152. Maximum Product Subarray
+// Learning: Dynamic Programming
+// Description: Given array of integer. Find the maximum product
+
 #include <bits/stdc++.h>
 using namespace std;
 
