@@ -1,3 +1,7 @@
+// LeetCode: 121. Best Time to Buy and Sell Stock
+// Learning: Dynamic Programming
+// Description: Given array of integer. Find the maximum profit
+
 #include <bits/stdc++.h>
 using namespace std;
 
