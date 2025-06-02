@@ -1,10 +1,8 @@
 // LeetCode: 53. Maximum Subarray
-// Learning: Subarray
+// Learning: Subarray, Dynamic Programming
 // Description: Given array. Find the subarray with the largest sum
 #include <bits/stdc++.h>
 using namespace std;
-//Advanced skills: Dynamic Programming
-//Fundamental skills: Array, Sorting
 int maxSubArray(vector<int>& nums) {
     int maxSum = INT_MIN;
     int currentSum = 0;
