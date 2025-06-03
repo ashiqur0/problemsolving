@@ -1,4 +1,4 @@
-// CodeForces: A. Even Odds
+// CodeForces: A. Even Odds 
 // Learning: Math
 // Description: Given n and k. 1 to till n the odd number will be stored sequentially then 1 to till n even number will be stored. Need to print the k positioned number.
 
