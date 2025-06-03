@@ -8,7 +8,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int getSum(int a, int b) {
-    while(b != 0) {
+    while(b) {
         int temp = (a&b) << 1;  // 0001 & 0010 = 0000 << 1 = 0000
         a = a^b;                // 0001 ^ 0010 = 0011
         b = temp;               // b = temp = 0000 = 0
