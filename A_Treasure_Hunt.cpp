@@ -11,7 +11,7 @@ int main() {
     while(t--) {
         int x, y, a;
         cin >> x >> y >> a;
-        cout << (a%(x+y) < x ? "NO\n" : "YES\n") ;
+        cout << (a%(x+y) < x ? "NO\n" : "YES\n") << endl;
     }
 
   return 0;
