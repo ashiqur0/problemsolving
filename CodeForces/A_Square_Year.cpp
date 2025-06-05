@@ -2,6 +2,13 @@
 // Learning: binary search, brute force, math
 // Description: if given year is possible to represent square of two number sum then print that two number else print -1;
 
+// Test Cases
+// 5
+// 0001 // 0 1
+// 1001 // -1
+// 1000 // -1
+// 4900 // 34 36
+// 2025 // 20 25
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
