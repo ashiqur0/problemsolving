@@ -1,3 +1,6 @@
+// CodeForces: A. Gellyfish and Tricolor Pansy
+// Learning: games, greedy	
+// Description: not yet solved
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
