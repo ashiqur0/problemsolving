@@ -1,0 +1,5 @@
+Daily Question:
+LeetCode: 440. K-th Smallest in Lexicographical Order
+
+Dynamic Programming:
+LeetCode: 139. Word Break
