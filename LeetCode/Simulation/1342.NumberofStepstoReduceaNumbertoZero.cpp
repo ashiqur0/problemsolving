@@ -20,13 +20,23 @@ Step 6) 1 is odd; subtract 1 and obtain 0.
 using namespace std;
 
 int numberOfSteps(int num) {
-    int count = 0;
-    while(num) {
-      if (num % 2 == 0) num /= 2;
-      else num -= 1;
-      ++count;
-    }
-    return count;
+  // // way 1:
+  // int count = 0;
+  // while(num) {
+  //   if (num % 2 == 0) num /= 2;
+  //   else num -= 1;
+  //   ++count;
+  // }
+  // return count;
+
+  // way 2: using bit wise operator
+  int count = 0;
+  while(num) {
+    if((num & 1) == 0) num >>= 1;
+    else num--;
+    count++;
+  }
+  return count;
 }
 
 int main() {
