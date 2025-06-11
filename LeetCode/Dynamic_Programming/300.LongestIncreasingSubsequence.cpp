@@ -13,7 +13,7 @@ int lengthOfLIS(vector<int>& nums) {
         if (nums[i] < nums[i + 1] && nums[i] < s.top()) {
             s.push(nums[i]);
             s.push(nums[i + 1]);
-        } else {
+        } else { 
 
         }
     }
