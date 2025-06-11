@@ -1,7 +1,8 @@
-// LeetCode: 1143. Longest Common Subsequence
-// Learning: String, Dynamic Programming
-// Description: 
-
+/*
+LeetCode: 1143. Longest Common Subsequence
+Learning: String, Dynamic Programming
+Description: 
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
