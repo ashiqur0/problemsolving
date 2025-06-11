@@ -1,5 +1,5 @@
 /*
-HackerRank Problem: Encryption
+HackerRank: Encryption
 Learning: string (space removing, transposing)
 Description:
     ১। এক লাইন স্ট্রিং ইনপুট নিতে হবে
