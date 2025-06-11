@@ -1,7 +1,8 @@
-// LeetCode: 300. Longest Increasing Subsequence
-// Learning: Array, Binary Search, Dynamic Programming
-// Description: Given an integer array nums, return the length of the longest strictly increasing subsequence.
-
+/*
+LeetCode: 300. Longest Increasing Subsequence
+Learning: Array, Binary Search, Dynamic Programming
+Description: Given an integer array nums, return the length of the longest strictly increasing subsequence.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
