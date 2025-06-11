@@ -1,4 +1,4 @@
-# LeetCode: 2185. Counting Words With a Given Prefix
+# LeetCode: 2185. Counting Words With a Given Prefix 
 # Learning: Array, String, String Matching
 # Description: You are given an array of strings words and a string pref. Return the number of strings in words that contain pref as a prefix. A prefix of a string s is any leading contiguous substring of s.
 class Solution(object):
