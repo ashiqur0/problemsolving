@@ -23,14 +23,14 @@ int lengthOfLIS(vector<int>& nums) {
     // int n = nums.size();
     // vector<int> arr;
     // for (int i = 0; i < n; i++) {
-    //     auto it = lower_bound(arr.begin(), arr.end(), nums[i]);
-    //     if (it == arr.end()) {
-    //         arr.push_back(nums[i]);
-    //     } else {
-    //         *it = nums[i];
+    //     auto it = lower_bound(arr.begin(), arr.end(), nums[i]);  // Find the position of nums[i] in arr which is <= nums[i]
+    //     if (it == arr.end()) {       // if there is no value less than nums[i] in the arr
+    //         arr.push_back(nums[i]);  // append: [10], [2, 5], [2, 3, 7], [2, 3, 7, 101]
+    //     } else {                     
+    //         *it = nums[i];           // otherwise update the last index with nums[i]: 10 -> 9, 9 -> 2, 5 -> 3, 101 -> 18
     //     }
     // }
-    // return arr.size();
+    // return arr.size();               // [2, 3, 7, 18].size()
 }
 
 int main() {
