@@ -6,17 +6,31 @@
 using namespace std;
 
 int lengthOfLIS(vector<int>& nums) {
-    int maxLength = INT_MAX, length = 0;
-    for (int i = 0; i < nums.size() - 1; i++) {
-        stack<int> s;
-        s.push(INT_MAX);
-        if (nums[i] < nums[i + 1] && nums[i] < s.top()) {
-            s.push(nums[i]);
-            s.push(nums[i + 1]);
-        } else { 
 
+    // Dynamic approach O(n^2)
+    int n = nums.size();
+    vector<int> dp(n, 1);
+    for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                    if (nums[i] > nums[j] && dp[i] < dp[j] + 1) {
+                dp[i] = dp[j] + 1;
+            }
         }
     }
+    return *max_element(dp.begin(), dp.end());
+
+    // // Greedy approach, binary search, O(n logn)
+    // int n = nums.size();
+    // vector<int> arr;
+    // for (int i = 0; i < n; i++) {
+    //     auto it = lower_bound(arr.begin(), arr.end(), nums[i]);
+    //     if (it == arr.end()) {
+    //         arr.push_back(nums[i]);
+    //     } else {
+    //         *it = nums[i];
+    //     }
+    // }
+    // return arr.size();
 }
 
 int main() {
