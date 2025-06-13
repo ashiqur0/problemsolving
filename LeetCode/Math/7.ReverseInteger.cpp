@@ -29,7 +29,7 @@ int reverse(int x) {
         x /= 10;
         if(ans > INT_MAX / 10 || (ans == INT_MAX / 10 && digit > 7)) return 0;
         if(ans < INT_MIN / 10 || (ans == INT_MIN / 10 && digit < -8)) return 0;
-        ans = ans * 10 + digit;
+        ans = ans * 10 + digit; // এখানে যেহেতু ১০ গুন করা হচ্ছে, তাই উপরের লাইনে ১০ দ্বারা ভাগ করে হিসাব করা হয়েছে।
     }
     return ans;
 }
@@ -42,7 +42,7 @@ int main() {
     int n = 1534236469;    // 0
     cout << reverse(n) << endl;
     // cout << INT_MAX << endl; //2147483647
-    cout << INT_MIN << endl;    //-2147483648
+    // cout << INT_MIN << endl;    //-2147483648
 
   return 0;
 }
