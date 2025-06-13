@@ -31,9 +31,10 @@ class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
         if (head == nullptr || head->next == nullptr) return head;
+        // if (!head || !head->next) return head; // same as above
         ListNode* slow = head;
         ListNode* fast = head;
-        while (fast != nullptr && fast->next != nullptr) {
+        while (fast != nullptr && fast->next != nullptr) {// && দ্বারা মিডের ২য় ভাল্যুকে নিশ্চিত করা হয়েছে
             slow = slow->next;
             fast = fast->next->next;
         }
