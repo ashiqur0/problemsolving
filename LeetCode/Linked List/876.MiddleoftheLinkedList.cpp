@@ -35,8 +35,8 @@ public:
         ListNode* slow = head;
         ListNode* fast = head;
         while (fast != nullptr && fast->next != nullptr) {// && দ্বারা মিডের ২য় ভাল্যুকে নিশ্চিত করা হয়েছে
-            slow = slow->next;
-            fast = fast->next->next;
+            slow = slow -> next;
+            fast = fast -> next -> next;
         }
         return slow;
     }
