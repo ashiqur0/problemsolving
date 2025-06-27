@@ -17,19 +17,19 @@ int main() {
     if (n < 26) {
         cout << "NO" << endl;
     } else {
-        vector<char> c(26);
+        vector<int> v(26);
         for (int i = 0; i < n; i ++) {
             if (s[i] >= 'A' && s[i] <= 'Z') {
-                c[s[i] - 'a' + 32]++;
+                v[s[i] - 'A']++;
             } else {
-                c[s[i] - 'a']++;
+                v[s[i] - 'a']++;
             }
         }
 
         bool isPangram = true;
 
-        for (int i = 0; i < c.size(); i++) {
-            if (c[i] == 0) {
+        for (int i = 0; i < v.size(); i++) {
+            if (v[i] == 0) {
                 cout << "NO" << endl;
                 isPangram = false;
                 break;
