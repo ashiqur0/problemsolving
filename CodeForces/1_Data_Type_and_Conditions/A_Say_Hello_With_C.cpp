@@ -13,6 +13,9 @@ Print "Hello, " without quotes, then print name.
 Example: 
 Input : programmer
 Output: Hello, programmer
+
+Reference: The problem is from, ICPC Assiut University Community
+Aim to: Newcomers Training
 */
 
 #include <bits/stdc++.h>
