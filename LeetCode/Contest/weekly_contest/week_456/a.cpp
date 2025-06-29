@@ -1,6 +1,6 @@
 /*
-LeetCode : Weekly Contest 456 [Question 1]: 3597. Partition String
-Learning: Trie
+LeetCode : Weekly Contest 456 Q1. Partition String
+Learning: 
 Description: Given a string s, partition it into unique segments according to the following procedure:
 
 Start building a segment beginning at index 0.
