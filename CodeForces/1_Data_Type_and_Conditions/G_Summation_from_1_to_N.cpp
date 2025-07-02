@@ -2,7 +2,7 @@
 CodeForces: Data Type and Conditions - Problem G
 Problem Name: G. Summation from 1 to N
 Learning: Data Type, Input, Output,
-Description: sum = n*(n+1)/2
+Description: sum = n*(n+1)/2 
 */
 
 #include <bits/stdc++.h>
