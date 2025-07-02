@@ -4,7 +4,7 @@ Problem Name: H. Two numbers
 Learning: Data Type, Input, Output,
 Description: Given 2 numbers A and B. Print floor, ceil and round of A/B
 
-Note:
+Note: 
 Floor: Is a mathematical function that takes a real number X and its output is the greatest integer less than or equal to X.
 Ceil: Is a mathematical function that takes a real number X and its output is the smallest integer larger than or equal to X.
 Round: Is a mathematical function that takes a real number X and its output is the closest integer to that number X.
