@@ -1,7 +1,7 @@
 /*
 CodeForces: Data Type and Conditions - Problem I
 Problem Name: I. Welcome for you with Conditions
-Learning: Data Type, Input, Output,
+Learning: Conditional Statements
 Description: Given two numbers A and B. Print "Yes" if A is greater than or equal to B. Otherwise print "No".
 */
 
