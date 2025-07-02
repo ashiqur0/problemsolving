@@ -1,7 +1,7 @@
 /*
 CodeForces: Data Type and Conditions - Problem L
 Problem Name: L. The Brothers
-Learning: Data Type, Input, Output,
+Learning: Conditional Statements
 Description: Given two person names.
 Each person has {"the first name" + "the second name"}
 Determine whether they are brothers or not.
