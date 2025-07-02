@@ -1,7 +1,7 @@
 /*
 CodeForces: Data Type and Conditions - Problem J
 Problem Name: J. Multiples
-Learning: Data Type, Input, Output,
+Learning: Conditional Statements
 Description: Given two numbers A and B. Print "Multiples" if A is multiple of B or vice versa. Otherwise print "No Multiples".
 */
 
