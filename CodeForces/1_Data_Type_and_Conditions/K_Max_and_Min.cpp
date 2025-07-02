@@ -1,7 +1,7 @@
 /*
 CodeForces: Data Type and Conditions - Problem K
 Problem Name: K. Max and Min
-Learning: Data Type, Input, Output,
+Learning: Conditional Statements
 Description: Given 3 numbers A, B and C, Print the minimum and the maximum numbers.
 */
 
