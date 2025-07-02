@@ -34,8 +34,8 @@ string toLowerCase(string s) {
 
 int main() {
 
-    string s = "";
-    cout << toLowerCase(s) << endl;
+    string s = "Hello";
+    cout << toLowerCase(s) << endl; // output: hello
 
   return 0;
 }
