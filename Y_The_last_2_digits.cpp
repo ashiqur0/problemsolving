@@ -1,16 +1,21 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int main() {
 
-    int a, b, c, d;
+int main() {
+    long long a, b, c, d;
     cin >> a >> b >> c >> d;
 
-    int res = a;
-    res = (res * b) % 100;
-    res = (res * c) % 100;
-    res = (res * d) % 100;
+    long long result = 1;
+    result = (result * a) % 100;
+    result = (result * b) % 100;
+    result = (result * c) % 100;
+    result = (result * d) % 100;
 
-    cout << res << endl;
+    // Print last 2 digits with leading zero if needed
+    if (result < 10)
+        cout << "0" << result << endl;
+    else
+        cout << result << endl;
 
-  return 0;
+    return 0;
 }
